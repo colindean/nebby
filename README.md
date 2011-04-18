@@ -40,3 +40,13 @@ Eventually, nebby should be useable as a gem with a sinatra or rails
 application. sinatra integration is foremost, as standalone nebby will use
 sinatra. rails is secondary because it will need to meet the robust needs of
 rails clientele.
+
+Prior Art
+---------
+
+[Surveyor](https://github.com/NUBIC/surveyor) is an existing gem and has
+a similar DSL. However, its syntax is more procedural whereas nebby's is more
+block-oriented in the style of many testing frameworks.
+
+However, it's likely that nebby will draw some semblance of influence from
+Surveyor. Also, I've never used Surveyor.
