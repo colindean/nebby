@@ -6,8 +6,8 @@ class NebbyExample < Nebby::Survey; end
 class NebbyExample
 
   admin do 
-    config.password "thisismypassword" #this is the password which will be used to access the admin tool
-    config.use_google_charts true #set this to false if you don't want google to see your data!
+    password "thisismypassword" #this is the password which will be used to access the admin tool
+    use_google_charts true #set this to false if you don't want google to see your data!
   end
   
   anonymous #expect no identifying information
@@ -25,6 +25,11 @@ class NebbyExample
   #paging :individual
   #paging 7 # split questions into seven groups automatically, or use influences in questions
   
+
+  #set start and end date
+  starting "2012-03-12"
+  ending "2012-12-21"
+
   ask "Who are you?" do
     type :short_answer #the type of the question
     code "who" #a short code for dealing with it
@@ -39,7 +44,7 @@ class NebbyExample
   ask "What is the airspeed velocity of an unladen swallow?" do
     type :shortanswer
     code "swallow"
-    answer "African or European", {:case_sensitive => false} #One True Answer question
+    expected_answer "African or European", {:case_sensitive => false} #One True Answer question
   end
   
   ask "What of these do you prefer?" do
@@ -105,3 +110,6 @@ class NebbyExample
   #just about every type will have a shorthand available, no code or custom validation when using shorthand
   
 end
+
+#serve up the survey standalone
+Nebby::Server.serve NebbyExample
