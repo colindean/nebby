@@ -41,6 +41,11 @@ application. sinatra integration is foremost, as standalone nebby will use
 sinatra. rails is secondary because it will need to meet the robust needs of
 rails clientele.
 
+### Long tail features
+
+* Randomization of recorded answers - optionally omit timestamp of answer
+* Randomization of question order - each new respondent gets a randomized order of questions
+
 Prior Art
 ---------
 
