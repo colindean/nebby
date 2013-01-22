@@ -1,3 +1,3 @@
-require './nebby/version.rb'
-require './nebby/survey.rb'
-require './nebby/question.rb'
+require_relative 'nebby/version.rb'
+require_relative 'nebby/survey.rb'
+require_relative 'nebby/question.rb'

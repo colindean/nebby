@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-require 'nebby'
+#require 'nebby'
 
 class NebbyExample < Nebby::Survey; end
 
@@ -63,7 +63,7 @@ class NebbyExample
   ask "Are these options mapped to something else?" do
     type :option
     code "mapped"
-    choose_one {"Totally" => "yes", "Negative" => "no"}
+    choose_one [ "Totally" => "yes", "Negative" => "no" ]
   end
   
   ask "Do you agree with this question?" do
