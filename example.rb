@@ -1,5 +1,5 @@
 #!/usr/bin/env ruby
-#require 'nebby'
+require_relative 'lib/nebby'
 
 class NebbyExample < Nebby::Survey; end
 

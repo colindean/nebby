@@ -7,7 +7,7 @@ class Nebby::Survey
 
   def initialize
     @questions = []
-    @admin_options = []
+    @admin_options = Nebby::AdminOptions.new
     @survey_options = {}
     @languages = []
   end
@@ -55,8 +55,14 @@ class Nebby::Survey
   end
 
   def self.admin &block
-    
+    self.instance.process_options_block &block
   end
+
+  def process_options_block &block
+    @admin_options.instance_eval &block
+  end
+
+
 
 
 end
