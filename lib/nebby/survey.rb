@@ -59,8 +59,10 @@ class Nebby::Survey
   end
 
   def process_options_block &block
-    @admin_options.instance_eval &block
+      @admin_options.instance_eval &block
   end
+
+
 
 
 

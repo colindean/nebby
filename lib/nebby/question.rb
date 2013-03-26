@@ -37,4 +37,20 @@ class Nebby::Question
     end
   end
 
+  #http://www.clemson.edu/centers-institutes/tourism/documents/sample-scales.pdf
+  def likert number
+    options = number
+    type = :option
+    five = {  "Strongly disagree" => 1, 
+              "Disagree" => 2, 
+              "Neither agree nor disagree" => 3, 
+              "Agree" => 4, 
+              "Strongly agree" => 5 }
+    choose_one five
+  end
+
+  def numeric
+    #validate that answer is a number
+  end
+
 end
