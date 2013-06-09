@@ -6,6 +6,11 @@ Nebby is a domain-specific language for describing surveys.
 Nebby provides a quick, Ruby-throated way to construct a survey and present
 the results in an easy-to-understand and easy-to-share way.
 
+by Colin Dean <http://cad.cx>
+
+Help fund development:
+[![Gittip](http://badgr.co/Gittip/colindean.png)](https://www.gittip.com/colindean/)
+
 Requirements
 ------------
 
