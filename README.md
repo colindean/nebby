@@ -9,7 +9,7 @@ the results in an easy-to-understand and easy-to-share way.
 by Colin Dean <http://cad.cx>
 
 Help fund development:
-[![Gittip](http://badgr.co/Gittip/colindean.png)](https://www.gittip.com/colindean/)
+[![Gittip](http://img.shields.io/Gittip/colindean.png)](https://www.gittip.com/colindean/)
 
 Requirements
 ------------
